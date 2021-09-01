@@ -1,0 +1,28 @@
+{
+  "name": "onevalley_fruits",
+  "version": "1.0.0",
+  "description": "One Valley take home coding challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickiychung/fruit-valley.git"
+  },
+  "author": "Vicki Chung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickiychung/fruit-valley/issues"
+  },
+  "homepage": "https://github.com/vickiychung/fruit-valley#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
