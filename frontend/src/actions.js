@@ -1,9 +1,9 @@
 import * as FruitsAPI from './info_api';
 
-export const FETCH_FRUIT_INFO = 'FETCH_FRUIT_INFO';
+export const RECEIVE_FRUIT_INFO = 'RECEIVE_FRUIT_INFO';
 
 const receiveFruitInfo = fruitInfo => ({
-  type: FETCH_FRUIT_INFO,
+  type: RECEIVE_FRUIT_INFO,
   fruitInfo
 });
 
