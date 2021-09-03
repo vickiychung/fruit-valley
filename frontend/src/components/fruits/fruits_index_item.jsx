@@ -14,8 +14,6 @@ class FruitsIndexItem extends React.Component {
       (fruit.name !== 'Persimmon') && 
       (fruit.name !== 'Papaya') 
       ? <li className="indiv-fruit">
-          {fruit.name}
-
           <img className="fruit-pic"
             src={imgUrl.toLowerCase()} 
             alt={fruit.name} />

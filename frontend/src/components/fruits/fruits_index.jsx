@@ -15,7 +15,7 @@ class FruitsIndex extends React.Component {
     const { fruits } = this.props;
 
     return fruits ? (
-      <div>
+      <div className="fruits-index">
         <ul className="fruits-list">
           {fruits.map(fruit => 
             <FruitsIndexItem 
