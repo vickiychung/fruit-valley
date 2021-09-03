@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchFruits, fetchFruitInfo } from '../../actions';
+import { fetchFruits, fetchFruitInfo } from '../../actions/fruits_actions';
 import FruitsIndex from './fruits_index';
 
 const mapStateToProps = (state) => {

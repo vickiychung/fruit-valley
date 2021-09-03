@@ -1,4 +1,4 @@
-import * as FruitsAPI from './fruits_api';
+import * as FruitsAPI from '../fruits_api';
 
 export const RECEIVE_FRUITS = 'RECEIVE_FRUITS'
 export const RECEIVE_FRUIT_INFO = 'RECEIVE_FRUIT_INFO';

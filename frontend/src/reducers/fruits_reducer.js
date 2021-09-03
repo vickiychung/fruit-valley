@@ -1,4 +1,4 @@
-import { RECEIVE_FRUITS, RECEIVE_FRUIT_INFO } from '../actions';
+import { RECEIVE_FRUITS, RECEIVE_FRUIT_INFO } from '../actions/fruits_actions';
 
 const fruitsReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
