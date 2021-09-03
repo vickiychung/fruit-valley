@@ -15,9 +15,32 @@
   transform: translate(-50%, -50%);
 
   background-color: white;
+  width: 70%;
+  height: 80%;
+  display: flex;
+}
+
+.modal-left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lemonchiffon;
+}
+
+.modal-fruit-name {
+  font-size: 30px;
+  font-family: cursive;
+  color: darkslategrey;
 }
 
 .modal-fruit-pic {
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.modal-right {
+  width: 65%;
+  background-color: lavenderblush;
 }

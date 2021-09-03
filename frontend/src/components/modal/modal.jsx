@@ -12,11 +12,17 @@ const Modal = function ({ fruit, closeModal }) {
 
     <div className="modal-background" onClick={closeModal}>
       <div className="modal-child" onClick={e => e.stopPropagation()}>
-        {fruit.name}
+        <div className="modal-left">
+          <h3 className="modal-fruit-name">{fruit.name}</h3>
 
-        <img className="modal-fruit-pic"
-            src={imgUrl.toLowerCase()} 
-            alt={fruit.name} />
+          <img className="modal-fruit-pic"
+              src={imgUrl.toLowerCase()} 
+              alt={fruit.name} />
+        </div>
+
+        <div className="modal-right">
+
+        </div>
       </div>
     </div>
   );
