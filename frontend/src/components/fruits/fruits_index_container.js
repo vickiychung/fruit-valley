@@ -1,15 +1,17 @@
 import { connect } from 'react-redux';
-import { fetchFruitInfo } from '../../actions';
+import { fetchFruits, fetchFruitInfo } from '../../actions';
 import FruitsIndex from './fruits_index';
 
 const mapStateToProps = (state) => {
   return {
+    fruits: state.fruits.data,
     fruitInfo: state.fruitInfo
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
+    fetchFruits: () => dispatch(fetchFruits()),
     fetchFruitInfo: fruitName => dispatch(fetchFruitInfo(fruitName))
   };
 };

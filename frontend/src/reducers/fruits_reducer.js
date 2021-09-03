@@ -1,9 +1,12 @@
-import { RECEIVE_FRUIT_INFO } from '../actions';
+import { RECEIVE_FRUITS, RECEIVE_FRUIT_INFO } from '../actions';
 
 const fruitsReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
 
   switch (action.type) {
+    case RECEIVE_FRUITS:
+      return action.fruits;
+
     case RECEIVE_FRUIT_INFO:
       return action.fruitInfo;
   

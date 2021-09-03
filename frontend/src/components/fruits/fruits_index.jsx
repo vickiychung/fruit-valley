@@ -6,15 +6,16 @@ class FruitsIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchFruitInfo('apple');
+    this.props.fetchFruits();
+    // this.props.fetchFruitInfo('apple');
   }
 
   render() {
-    const { fruitInfo } = this.props;
+    const { fruits } = this.props;
       
     return (
       <div>
-        fruitInfo
+        <p>test</p>
       </div>
     )
   }

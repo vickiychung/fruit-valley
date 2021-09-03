@@ -1,8 +1,9 @@
 import React from 'react';
+import FruitsIndexContainer from './fruits/fruits_index_container'
 
 const App = () => (
   <div>
-    <p>hello</p>
+    <FruitsIndexContainer />
   </div>
 );
 
