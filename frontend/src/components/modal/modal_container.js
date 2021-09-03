@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { closeModal } from '../../actions/modal_actions';
+import Modal from './modal';
 
 const mapStateToProps = state => {
   return {
@@ -13,4 +14,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)();
+export default connect(mapStateToProps, mapDispatchToProps)(Modal);
