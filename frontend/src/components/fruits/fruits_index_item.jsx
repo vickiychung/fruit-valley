@@ -6,11 +6,15 @@ class FruitsIndexItem extends React.Component {
   }
 
   render() {
-    const { fruit } = this.props;
-
+    const { fruit, imgUrl } = this.props;
+    
     return(
-      <li>
+      <li className="indiv-fruit">
         {fruit.name}
+
+        <img className="fruit-pic"
+          src={imgUrl.toLowerCase()} 
+          alt={fruit.name} />
       </li>
     ) 
   }

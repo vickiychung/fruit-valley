@@ -1,0 +1,14 @@
+.fruits-list {
+
+}
+
+.indiv-fruit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fruit-pic {
+  height: 10%;
+  width: 10%;
+}
+
