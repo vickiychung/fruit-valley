@@ -6,7 +6,7 @@ class FruitsIndexItem extends React.Component {
   }
 
   render() {
-    const { fruit, imgUrl, openModal, closeModal } = this.props;
+    const { fruit, imgUrl, openModal } = this.props;
 
     return (fruit.name !== 'Grapes') && 
       (fruit.name !== 'Lime') && 
