@@ -12,7 +12,7 @@ class FruitsIndex extends React.Component {
   }
 
   render() {
-    const { fruits } = this.props;
+    const { fruits, openModal, closeModal } = this.props;
 
     return fruits ? (
       <div className="fruits-index">
@@ -21,7 +21,9 @@ class FruitsIndex extends React.Component {
             <FruitsIndexItem 
               key={`${fruit.id}-${fruit.name}`} 
               fruit={fruit}
-              imgUrl={`https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/${fruit.name}.png`} 
+              imgUrl={`https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/${fruit.name}.png`}
+              openModal={openModal}
+              closeModal={closeModal}
             />
           )}
         </ul>
