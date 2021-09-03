@@ -1,4 +1,5 @@
 import React from 'react';
+import FruitsIndexItem from './fruits_index_item';
 
 class FruitsIndex extends React.Component {
   constructor(props) {
@@ -7,17 +8,23 @@ class FruitsIndex extends React.Component {
 
   componentDidMount() {
     this.props.fetchFruits();
-    // this.props.fetchFruitInfo('apple');
   }
 
   render() {
     const { fruits } = this.props;
-      
-    return (
+
+    return fruits ? (
       <div>
-        <p>test</p>
+        <ul>
+          {fruits.map(fruit => 
+            <FruitsIndexItem 
+              key={`${fruit.id}-${fruit.name}`} 
+              fruit={fruit} 
+            />
+          )}
+        </ul>
       </div>
-    )
+    ) : '';
   }
 }
 
