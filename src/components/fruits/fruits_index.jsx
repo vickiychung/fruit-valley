@@ -3,10 +3,6 @@ import FruitsIndexItem from './fruits_index_item';
 import './fruits.css';
 
 class FruitsIndex extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     this.props.fetchFruits();
   }
