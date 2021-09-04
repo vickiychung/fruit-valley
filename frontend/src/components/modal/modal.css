@@ -69,7 +69,7 @@
 }
 
 .modal-info-bullet p:first-child {
-  margin-right: 5px;
+  margin-right: 10px;
   margin-bottom: 20px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .nutrition-list {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .nutrition-list li {
@@ -93,16 +93,18 @@
 
 .nutrition-list li p:first-child {
   font-style: italic;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .close {
   position: absolute;
   right: 12px;
   top: 8px;
+  font-size: 20px;
 }
 
 .close:hover {
   color: blueviolet;
   font-weight: 800;
+  cursor: pointer;
 }
