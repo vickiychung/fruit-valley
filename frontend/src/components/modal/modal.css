@@ -43,4 +43,18 @@
 .modal-right {
   width: 65%;
   background-color: lavenderblush;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-info {
+  padding-left: 10px;
+}
+
+.nutrition-list {
+
 }

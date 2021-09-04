@@ -22,20 +22,22 @@ const Modal = function ({ fruit, closeModal }) {
         </div>
 
         <div className="modal-right">
-          <p>Genus: {fruit.genus}</p>
-          <p>Family: {fruit.family}</p>
-          <p>Order: {fruit.order}</p>
+          <div className="modal-info">
+            <p>Genus: {fruit.genus}</p>
+            <p>Family: {fruit.family}</p>
+            <p>Order: {fruit.order}</p>
 
-          <span>
-            Nutritions:
-            <ul>
-              <li>Carbohydrates: {nutritions.carbohydrates}</li>
-              <li>Protein: {nutritions.protein}</li>
-              <li>Fat: {nutritions.fat}</li>
-              <li>Calories: {nutritions.calories}</li>
-              <li>Sugar: {nutritions.sugar}</li>
-            </ul>
-          </span>
+            <span>
+              Nutritions:
+              <ul className="nutrition-list">
+                <li>Carbohydrates: {nutritions.carbohydrates}</li>
+                <li>Protein: {nutritions.protein}</li>
+                <li>Fat: {nutritions.fat}</li>
+                <li>Calories: {nutritions.calories}</li>
+                <li>Sugar: {nutritions.sugar}</li>
+              </ul>
+            </span>
+          </div>
         </div>
       </div>
     </div>
