@@ -1,28 +1,44 @@
 {
-  "name": "onevalley_fruits",
-  "version": "1.0.0",
-  "description": "One Valley take home coding challenge",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "server": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vickiychung/fruit-valley.git"
-  },
-  "author": "Vicki Chung",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vickiychung/fruit-valley/issues"
-  },
-  "homepage": "https://github.com/vickiychung/fruit-valley#readme",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
-    "express": "^4.17.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.1",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "web-vitals": "^1.1.2"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
