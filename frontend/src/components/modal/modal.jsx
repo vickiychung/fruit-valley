@@ -23,18 +23,42 @@ const Modal = function ({ fruit, closeModal }) {
 
         <div className="modal-right">
           <div className="modal-info">
-            <p>Genus: {fruit.genus}</p>
-            <p>Family: {fruit.family}</p>
-            <p>Order: {fruit.order}</p>
+            <span className="modal-info-bullet">
+              <p>Genus:</p>
+              <p>{fruit.genus}</p>
+            </span>
+            <span className="modal-info-bullet">
+              <p>Family:</p>
+              <p>{fruit.family}</p>
+            </span>
+            <span className="modal-info-bullet">
+              <p>Order:</p>
+              <p>{fruit.order}</p>
+            </span>
 
             <span>
               Nutritions:
               <ul className="nutrition-list">
-                <li>Carbohydrates: {nutritions.carbohydrates}</li>
-                <li>Protein: {nutritions.protein}</li>
-                <li>Fat: {nutritions.fat}</li>
-                <li>Calories: {nutritions.calories}</li>
-                <li>Sugar: {nutritions.sugar}</li>
+                <li>
+                  <p>Carbohydrates:</p>
+                  <p>{nutritions.carbohydrates}</p>
+                </li>
+                <li>
+                  <p>Protein:</p>
+                  <p>{nutritions.protein}</p>
+                </li>
+                <li>
+                  <p>Fat:</p>
+                  <p>{nutritions.fat}</p>
+                </li>
+                <li>
+                  <p>Calories:</p>
+                  <p>{nutritions.calories}</p>
+                </li>
+                <li>
+                  <p>Sugar:</p>
+                  <p>{nutritions.sugar}</p>
+                </li>
               </ul>
             </span>
           </div>

@@ -21,7 +21,7 @@
 }
 
 .modal-left {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,9 +30,12 @@
 }
 
 .modal-fruit-name {
-  font-size: 30px;
+  font-size: 35px;
   font-family: cursive;
   color: darkslategrey;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .modal-fruit-pic {
@@ -41,20 +44,54 @@
 }
 
 .modal-right {
-  width: 65%;
+  width: 60%;
   background-color: lavenderblush;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: darkslateblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .modal-info {
-  padding-left: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal-info-bullet {
+  display: flex;
+}
+
+.modal-info-bullet p {
+  margin: 0px;
+}
+
+.modal-info-bullet p:first-child {
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.modal-info-bullet p:nth-child(2) {
+  font-weight: 500;
 }
 
 .nutrition-list {
+  padding-left: 10px;
+}
 
+.nutrition-list li {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.nutrition-list li p {
+  margin: 0px;
+  font-weight: 500;
+}
+
+.nutrition-list li p:first-child {
+  font-style: italic;
+  margin-right: 5px;
 }
