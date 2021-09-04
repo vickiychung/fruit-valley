@@ -1,10 +1,6 @@
 import React from 'react';
 
 class FruitsIndexItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { fruit, imgUrl, openModal } = this.props;
 
