@@ -22,6 +22,10 @@ const Modal = function ({ fruit, closeModal }) {
         </div>
 
         <div className="modal-right">
+          <div className="close" onClick={() => closeModal()}>
+            x
+          </div>
+
           <div className="modal-info">
             <span className="modal-info-bullet">
               <p>Genus:</p>

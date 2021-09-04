@@ -95,3 +95,14 @@
   font-style: italic;
   margin-right: 5px;
 }
+
+.close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+
+.close:hover {
+  color: blueviolet;
+  font-weight: 800;
+}
