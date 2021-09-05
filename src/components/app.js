@@ -7,7 +7,7 @@ const App = () => (
   <div>
     <ModalContainer />
 
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <FruitsIndexContainer />
     </BrowserRouter>
     {/* <Switch>
