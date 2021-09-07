@@ -7,6 +7,6 @@
   * `npm install` to install dependencies 
   * `npm start` to run on local environment
   * Back End: Node.js, Express.js
-  * Front End: create-react-app
+  * Front End: Axios, React.js
 
 ![fruit_valley](https://user-images.githubusercontent.com/72854605/132271844-6ee8edf0-e4cc-46cc-b382-9094e5cc3ebe.gif)
