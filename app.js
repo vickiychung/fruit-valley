@@ -3,6 +3,8 @@ const fetch = require('node-fetch');
 const app = express();
 const path = require('path');
 
+app.use(express.static('public'));
+
 app.get('/api/fruit/all', (req, res) => {
   fetch('https://www.fruityvice.com/api/fruit/all')
   .then(response => response.text())
@@ -11,13 +13,6 @@ app.get('/api/fruit/all', (req, res) => {
     res.send(body);
   })
 })
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('/build'));
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-  })
-}
 
 app.listen(PORT, () => {
   console.log(`listening on ${PORT}`)
