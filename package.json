@@ -5,6 +5,7 @@
   "homepage": "https://fruit-valley.herokuapp.com",
   "dependencies": {
     "ansi-html": "0.0.9",
+    "ansi-regex": "^6.0.1",
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "follow-redirects": "^1.14.9",
